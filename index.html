@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tuLONG - Coming Soon</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #f44336;
+            font-family: "Courier New", Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+        }
+        .title {
+            font-size: 2rem;
+            animation: blink-cursor 1s steps(2, start) infinite;
+        }
+        .message {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        @keyframes blink-cursor {
+            0% { border-right: 2px solid #00ff00; }
+            50% { border-right: 2px solid transparent; }
+            100% { border-right: 2px solid #00ff00; }
+        }
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .message, .footer {
+            animation: fade-in 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            tulong() &#123; <span style="font-weight: bold;">// Coming Soon...</span>
+        </div>
+        <div class="message">
+            <p>// We're working hard to bring you something amazing.</p>
+            <p>// While you wait, grab a coffee or maybe... tuLONG us with ideas?</p>
+        </div>
+        <div class="footer">
+              <p>&lt; Coming Soon for National Science and Technology Fair 2025! &gt;</p>
+        </div>
+    </div>
+</body>
+</html>
